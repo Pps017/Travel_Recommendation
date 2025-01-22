@@ -25,14 +25,38 @@ document.getElementById('searchButton').addEventListener('click', function() {
              console.log(text);
              recommendations.innerHTML=text;
              text='';
-        } else if (query.includes("australia")||query.includes("japan")||query.includes("brazil")) {
+        } else if (query.includes("australia")) {
             // Show country results
-            
-        }else {
-
+            data.countries[0].cities.forEach(e => {
+                text+=('<div><img src='+e.imageUrl+'/><h3>'+e.name+'</h3><p>'+e.description+'</p><button>Visit</button></div>')
+             });
+             console.log(text);
+             recommendations.innerHTML=text;
+             text='';
+        }else if (query.includes("japan")) {
+            // Show country results
+            data.countries[1].cities.forEach(e => {
+                text+=('<div><img src='+e.imageUrl+'/><h3>'+e.name+'</h3><p>'+e.description+'</p><button>Visit</button></div>')
+             });
+             console.log(text);
+             recommendations.innerHTML=text;
+             text='';
+        }else if (query.includes("brazil")) {
+            // Show country results
+            data.countries[2].cities.forEach(e => {
+                text+=('<div><img src='+e.imageUrl+'/><h3>'+e.name+'</h3><p>'+e.description+'</p><button>Visit</button></div>')
+             });
+             console.log(text);
+             recommendations.innerHTML=text;
+             text='';
         }
     })
     .catch(error => console.error('Error fetching data:', error));
 
     
 });
+
+document.getElementById("resetButton").addEventListener("click",()=>{
+    document.getElementById('search').value="";
+    document.getElementById('recommendations').innerHTML="";
+})
