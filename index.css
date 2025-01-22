@@ -1,0 +1,51 @@
+#home {
+    background-image: url('https://i.pinimg.com/originals/90/34/07/903407b85be83f8aaa9288845d4e8493.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+#contactpage {
+    background-image: url('https://i.pinimg.com/originals/90/34/07/903407b85be83f8aaa9288845d4e8493.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+#aboutpage {
+    background-image: url('https://i.pinimg.com/originals/90/34/07/903407b85be83f8aaa9288845d4e8493.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+}
+
+#results {
+    padding: 40px 0;
+    background-color: #343a40;
+}
+
+#results .card {
+    margin-bottom: 20px;
+}
+
+#contact textarea {
+    height: 150px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
